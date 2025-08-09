@@ -110,20 +110,20 @@ function createTodoElement(todo) {
 }
 
 function addNewTodo() {
-  // const name = prompt('Nome do To-Do:');
-  // if (!name) return;
+  const name = prompt('Nome do To-Do:');
+  if (!name) return;
 
-  // const description = prompt('Descrição do To-Do:') || '';
+  const description = prompt('Descrição do To-Do:') || '';
 
-  // const newTodo = {
-  //   id: nextId++,
-  //   name: name.trim(),
-  //   description: description.trim(),
-  //   status: 'todo'
-  // };
+  const newTodo = {
+     id: nextId++,
+     name: name.trim(),
+     description: description.trim(),
+     status: 'todo'
+   };
 
-  // todos.push(newTodo);
-  // renderTodos();
+  todos.push(newTodo);
+  renderTodos();
 }
 
 function deleteTodo(id) {
